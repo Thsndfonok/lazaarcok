@@ -4,6 +4,6 @@ document.getElementById("enter-btn").addEventListener("click", () => {
 
   // 1 másodperc után átirányít
   setTimeout(() => {
-    window.location.href = "main.html";
+    window.location.href = '/fooldal/index.html';
   }, 1000);
 });
