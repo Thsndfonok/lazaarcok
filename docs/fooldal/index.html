@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lazaarcok</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <!-- Háttér videó -->
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="video.mp4" type="video/mp4">
+    A böngésződ nem támogatja a videót.
+  </video>
+
+  <!-- Navigáció -->
+  <nav>
+    <ul>
+      <li><a href="#rolunk">Rólunk</a></li>
+    </ul>
+  </nav>
+
+  <!-- Középen megjelenő tartalom -->
+  <div class="overlay">
+    <div class="overlay-box">
+      <h1>Üdv a lazaarcok főoldalán!</h1>
+      <section id="why-join">
+        <h2>Miért csatlakozz hozzánk?</h2>
+        <p>
+          A lazaarcok közössége egy barátságos, támogató hely, ahol mindenkinek van helye.
+          Itt találhatsz új barátokat, részt vehetsz közös eseményeken, és élvezheted a sokszínű programokat.
+          Csatlakozz, és légy te is a lazaarcok része!
+        </p>
+      </section>
+    </div>
+  </div>
+
+  <!-- Scroll nyíl -->
+  <a id="scroll-arrow" class="scroll-arrow" href="#vezetoseg">
+  <i class="fas fa-chevron-down"></i>
+</a>
+
+  <!-- Discord ikon külön is (ha kell) -->
+  <a href="https://discord.gg/lazaarcok" target="_blank" class="discord-icon" title="Csatlakozz Discord szerverünkhöz">
+    <i class="fab fa-discord"></i>
+  </a>
+
+  <!-- Vezetőség külön szekcióként -->
+  <section id="vezetoseg">
+    <h2>Vezetőség</h2>
+    <div class="vezetoseg-profilok">
+      <div class="profile">
+        <iframe src="https://lanyard.cnrad.dev/api/697558961754210354" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <div class="profile">
+        <iframe src="https://lanyard.cnrad.dev/api/527460645738643457" frameborder="0" scrolling="no"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Háttérzene -->
+  <audio id="bg-music" src="audio.mp3" loop></audio>
+
+  <!-- Zenevezérlés -->
+  <div id="music-control" class="playing" title="Zene leállítása" aria-label="Zene vezérlés">
+    <svg id="pause-icon" xmlns="http://www.w3.org/2000/svg" height="28" width="28" fill="white" viewBox="0 0 24 24">
+      <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+    </svg>
+    <svg id="play-icon" xmlns="http://www.w3.org/2000/svg" height="28" width="28" fill="white" viewBox="0 0 24 24" style="display:none;">
+      <path d="M8 5v14l11-7z"/>
+    </svg>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
